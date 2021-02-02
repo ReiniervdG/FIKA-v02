@@ -1,0 +1,10 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid d-flex h-100 flex-column success align-items-center">
+  <p>NICE, Je kan het drankje aan de klant geven!</p>
+  <img class="img-fluid" src="{% static 'core/images/success.gif' %}" alt="Success GIF">
+  <img class="img-fluid" src="{% static 'core/images/logo_vert_round.png' %}" alt="logo">
+</div>
+{% endblock %}

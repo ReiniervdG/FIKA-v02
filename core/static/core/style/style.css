@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+}
+
+.success {
+    background-color: #70AD47;
+    padding:20px;
+}
+
+.fail {
+    background-color: #C00000;
+    padding:20px;
+}
+
+.info {
+    background-color: #FFC000;
+    padding:20px;
+}
+
+.img-fluid {
+    height:40%;
+}

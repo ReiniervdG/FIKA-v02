@@ -1,0 +1,16 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'core:home' %}"><img height="80"
+                                                              src="{% static '/core/images/logo_horizontal_blackyellow.png' %}"
+                                                              alt="logo"></a>
+  </nav>
+  <div class="container-fluid">
+    this is the homepage
+  </div>
+  <footer>
+    Here comes the footer information
+  </footer>
+{% endblock %}

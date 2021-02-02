@@ -1,0 +1,13 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid d-flex h-100 flex-column info align-items-center">
+  <p>Deze code is goed! Van welk bedrijf ben je?</p>
+  <form method="POST"> {% csrf_token %}
+    {{ form.as_p }}
+    <input id="submit" type="submit">
+  </form>
+  <img class="img-fluid" src="{% static 'core/images/logo_vert_round.png' %}" alt="logo">
+</div>
+{% endblock %}

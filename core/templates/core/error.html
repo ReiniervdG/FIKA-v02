@@ -1,0 +1,10 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid d-flex h-100 flex-column fail align-items-center">
+  <p>{{ error }}</p>
+  <img class="img-fluid" src="{% static 'core/images/fail.gif' %}" alt="Success GIF">
+  <img class="img-fluid" src="{% static 'core/images/logo_vert_round.png' %}" alt="logo">
+</div>
+{% endblock %}
